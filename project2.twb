@@ -1,0 +1,1812 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='youtube_cleaned (youtube_cleaned1)' inline='true' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_cleaned1' name='excel-direct.0hhccgt0ltj31f12aezv11s1ffqs'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/HP/Desktop/youtube_cleaned1.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hhccgt0ltj31f12aezv11s1ffqs' name='youtube_cleaned' table='[youtube_cleaned$]' type='table'>
+          <columns gridOrigin='A1:U10001:no:A1:U10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='date' name='trending_date_x' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='channel_title' ordinal='3' />
+            <column datatype='integer' name='category_id' ordinal='4' />
+            <column datatype='string' name='publish_time' ordinal='5' />
+            <column datatype='string' name='tags' ordinal='6' />
+            <column datatype='integer' name='views' ordinal='7' />
+            <column datatype='integer' name='likes' ordinal='8' />
+            <column datatype='integer' name='dislikes' ordinal='9' />
+            <column datatype='integer' name='comment_count' ordinal='10' />
+            <column datatype='string' name='thumbnail_link' ordinal='11' />
+            <column datatype='boolean' name='comments_disabled' ordinal='12' />
+            <column datatype='boolean' name='ratings_disabled' ordinal='13' />
+            <column datatype='boolean' name='video_error_or_removed' ordinal='14' />
+            <column datatype='string' name='description' ordinal='15' />
+            <column datatype='string' name='region' ordinal='16' />
+            <column datatype='real' name='title_sentiment' ordinal='17' />
+            <column datatype='real' name='tags_sentiment' ordinal='18' />
+            <column datatype='string' name='title_sentiment_label' ordinal='19' />
+            <column datatype='integer' name='trending_days1' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U10001:no:A1:U10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date_x</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[trending_date_x]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>trending_date_x</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[channel_title]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>channel_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[publish_time]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>publish_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>views</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[views]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>views</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dislikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dislikes]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>dislikes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ratings_disabled]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>ratings_disabled</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_error_or_removed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[video_error_or_removed]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>video_error_or_removed</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_sentiment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[title_sentiment]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>title_sentiment</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags_sentiment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tags_sentiment]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>tags_sentiment</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_sentiment_label</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title_sentiment_label]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>title_sentiment_label</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_days1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trending_days1]</local-name>
+            <parent-name>[youtube_cleaned]</parent-name>
+            <remote-alias>trending_days1</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Engagement Score' datatype='integer' name='[Calculation_982629167583096832]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [comments_disabled] = False AND [ratings_disabled] = False THEN&#13;&#10;    [likes] + [dislikes] + [comment_count]&#13;&#10;ELSE&#13;&#10;    NULL&#13;&#10;END' />
+      </column>
+      <column caption='youtube_cleaned' datatype='table' name='[__tableau_internal_object_id__].[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]' role='measure' type='quantitative' />
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal' />
+      <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Comments Disabled' datatype='boolean' name='[comments_disabled]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Publish Time' datatype='string' name='[publish_time]' role='dimension' type='nominal' />
+      <column caption='Ratings Disabled' datatype='boolean' name='[ratings_disabled]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Tags Sentiment' datatype='real' name='[tags_sentiment]' role='measure' type='quantitative' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Title Sentiment' datatype='real' name='[title_sentiment]' role='measure' type='quantitative' />
+      <column caption='Title Sentiment Label' datatype='string' name='[title_sentiment_label]' role='dimension' type='nominal' />
+      <column caption='Trending Date X' datatype='date' name='[trending_date_x]' role='dimension' type='ordinal' />
+      <column caption='Trending Days1' datatype='integer' name='[trending_days1]' role='measure' type='quantitative' />
+      <column caption='Video Error Or Removed' datatype='boolean' name='[video_error_or_removed]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Video Id' datatype='string' default-role='measure' default-type='quantitative' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/Desktop/project2.twb Files/Data/TableauTemp/#TableauTemp_0p1aku5015errp16ngcid1fhr6m3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/23/2025 06:57:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>video_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[video_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61392</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trending_date_x</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[trending_date_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trending_date_x</remote-alias>
+              <ordinal>1</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16739</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[category_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category_id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publish_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[publish_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publish_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63408</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags</remote-alias>
+              <ordinal>6</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>45134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>views</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[views]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>views</remote-alias>
+              <ordinal>7</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>202310</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>likes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>likes</remote-alias>
+              <ordinal>8</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52228</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dislikes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dislikes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dislikes</remote-alias>
+              <ordinal>9</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9479</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comment_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[comment_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comment_count</remote-alias>
+              <ordinal>10</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21087</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thumbnail_link</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[thumbnail_link]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thumbnail_link</remote-alias>
+              <ordinal>11</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comments_disabled</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[comments_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comments_disabled</remote-alias>
+              <ordinal>12</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ratings_disabled</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[ratings_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ratings_disabled</remote-alias>
+              <ordinal>13</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>video_error_or_removed</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[video_error_or_removed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_error_or_removed</remote-alias>
+              <ordinal>14</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>15</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52212</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>16</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_sentiment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[title_sentiment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_sentiment</remote-alias>
+              <ordinal>17</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>839</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags_sentiment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tags_sentiment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags_sentiment</remote-alias>
+              <ordinal>18</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3983</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_sentiment_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title_sentiment_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_sentiment_label</remote-alias>
+              <ordinal>19</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trending_days1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trending_days1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trending_days1</remote-alias>
+              <ordinal>20</ordinal>
+              <family>youtube_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='youtube_cleaned' id='youtube!cleaned_AC9E6E6D9CAE41B49FFA3DFC56E49793'>
+            <properties context=''>
+              <relation connection='excel-direct.0hhccgt0ltj31f12aezv11s1ffqs' name='youtube_cleaned' table='[youtube_cleaned$]' type='table'>
+                <columns gridOrigin='A1:U10001:no:A1:U10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='video_id' ordinal='0' />
+                  <column datatype='date' name='trending_date_x' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='channel_title' ordinal='3' />
+                  <column datatype='integer' name='category_id' ordinal='4' />
+                  <column datatype='string' name='publish_time' ordinal='5' />
+                  <column datatype='string' name='tags' ordinal='6' />
+                  <column datatype='integer' name='views' ordinal='7' />
+                  <column datatype='integer' name='likes' ordinal='8' />
+                  <column datatype='integer' name='dislikes' ordinal='9' />
+                  <column datatype='integer' name='comment_count' ordinal='10' />
+                  <column datatype='string' name='thumbnail_link' ordinal='11' />
+                  <column datatype='boolean' name='comments_disabled' ordinal='12' />
+                  <column datatype='boolean' name='ratings_disabled' ordinal='13' />
+                  <column datatype='boolean' name='video_error_or_removed' ordinal='14' />
+                  <column datatype='string' name='description' ordinal='15' />
+                  <column datatype='string' name='region' ordinal='16' />
+                  <column datatype='real' name='title_sentiment' ordinal='17' />
+                  <column datatype='real' name='tags_sentiment' ordinal='18' />
+                  <column datatype='string' name='title_sentiment_label' ordinal='19' />
+                  <column datatype='integer' name='trending_days1' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+      <datasources>
+        <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+        <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:region:nk]' member='&quot;CA&quot;' />
+          <groupfilter function='member' level='[none:region:nk]' member='&quot;DE&quot;' />
+          <groupfilter function='member' level='[none:region:nk]' member='&quot;FR&quot;' />
+          <groupfilter function='member' level='[none:region:nk]' member='&quot;GB&quot;' />
+          <groupfilter function='member' level='[none:region:nk]' member='&quot;US&quot;' />
+        </groupfilter>
+        <target field='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Sentiment Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+            <column-instance column='[video_id]' derivation='CountD' name='[ctd:video_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title_sentiment_label]' derivation='None' name='[none:title_sentiment_label:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Title Sentiment Label' datatype='string' name='[title_sentiment_label]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Video Id' datatype='string' default-role='measure' default-type='quantitative' name='[video_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:title_sentiment_label:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[ctd:video_id:qk]</rows>
+        <cols>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{75187AC1-5165-4161-AA95-1721DC50B880}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Trending Duration per Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+            <column-instance column='[trending_days1]' derivation='Avg' name='[avg:trending_days1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Trending Days1' datatype='integer' name='[trending_days1]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[avg:trending_days1:qk]</rows>
+        <cols>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{2F185D97-9D5F-4C98-A5FB-D1D536463747}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Engagement</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+            <column caption='Engagement Score' datatype='integer' name='[Calculation_982629167583096832]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [comments_disabled] = False AND [ratings_disabled] = False THEN&#13;&#10;    [likes] + [dislikes] + [comment_count]&#13;&#10;ELSE&#13;&#10;    NULL&#13;&#10;END' />
+            </column>
+            <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+            <column caption='Comments Disabled' datatype='boolean' name='[comments_disabled]' role='dimension' type='nominal' />
+            <column-instance column='[video_id]' derivation='CountD' name='[ctd:video_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Ratings Disabled' datatype='boolean' name='[ratings_disabled]' role='dimension' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Calculation_982629167583096832]' derivation='Sum' name='[sum:Calculation_982629167583096832:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Video Id' datatype='string' default-role='measure' default-type='quantitative' name='[video_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:Calculation_982629167583096832:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[ctd:video_id:qk]' />
+              <color column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:Calculation_982629167583096832:qk]' />
+              <text column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5BC8AB7E-12CB-4B97-89E8-E65F6A7A6262}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Average Views Over Time </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+            <column-instance column='[trending_date_x]' derivation='Month' name='[mn:trending_date_x:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Trending Date X' datatype='date' name='[trending_date_x]' role='dimension' type='ordinal' />
+            <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:views:qk]</rows>
+        <cols>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[mn:trending_date_x:ok]</cols>
+      </table>
+      <simple-id uuid='{B27BF434-C4B5-4F9E-8988-F72EE36AE7A3}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Map of Views by Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:views:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:views:qk]' />
+              <lod column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' />
+              <geometry column='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[Latitude (generated)]</rows>
+        <cols>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2B7DABE8-4D02-4317-8BB6-0C15003042ED}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1650' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='youtube_cleaned (youtube_cleaned1)' name='federated.1gyc9650y3gbcy1dai9ea1wse3xv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1gyc9650y3gbcy1dai9ea1wse3xv'>
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+        <column caption='Region' datatype='string' name='[region]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97952' id='12' param='horz' type-v2='layout-flow' w='99022' x='489' y='1024'>
+            <zone h='97952' id='7' param='horz' type-v2='layout-flow' w='89248' x='489' y='1024'>
+              <zone h='97952' id='5' type-v2='layout-basic' w='89248' x='489' y='1024'>
+                <zone h='48976' id='3' name='Sheet 1' w='29750' x='489' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48976' id='9' name='Sheet 2' w='29749' x='59988' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48976' id='15' name='Sheet 4' w='44624' x='45113' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48976' id='17' name='Sheet 5' w='44624' x='489' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48976' id='19' name='Sheet 3' w='29749' x='30239' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97952' id='22' is-fixed='true' type-v2='layout-basic' w='9774' x='89737' y='1024'>
+              <zone h='49040' id='11' param='vert' type-v2='layout-flow' w='9774' x='89737' y='1024'>
+                <zone h='9347' id='18' name='Sheet 5' pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:views:qk]' type-v2='color' w='9774' x='89737' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='35595' id='20' is-fixed='true' name='Sheet 3' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' type-v2='filter' w='9774' x='89737' y='10371'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='48912' id='23' param='vert' type-v2='layout-flow' w='9774' x='89737' y='50064'>
+                <zone h='17285' id='16' name='Sheet 4' pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' type-v2='color' w='9774' x='89737' y='50064'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97952' id='28' param='vert' type-v2='layout-flow' w='99022' x='489' y='1024'>
+                <zone fixed-size='280' h='48976' id='3' is-fixed='true' name='Sheet 1' w='29750' x='489' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='35595' id='20' mode='checkdropdown' name='Sheet 3' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' type-v2='filter' w='9774' x='89737' y='10371'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48976' id='19' is-fixed='true' name='Sheet 3' w='29749' x='30239' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48976' id='9' is-fixed='true' name='Sheet 2' w='29749' x='59988' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48976' id='17' is-fixed='true' name='Sheet 5' w='44624' x='489' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9347' id='18' name='Sheet 5' pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:views:qk]' type-v2='color' w='9774' x='89737' y='1024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48976' id='15' is-fixed='true' name='Sheet 4' w='44624' x='45113' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17285' id='16' name='Sheet 4' pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' type-v2='color' w='9774' x='89737' y='50064'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DE85668A-4363-4860-A097-7D6F2771E9EA}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:title_sentiment_label:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{B9CF930A-6887-4EAE-A89A-8B4FE6A6F5DD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:title_sentiment_label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</field>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:title_sentiment_label:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{48B5D25D-B66F-408A-9171-7E54BCEE12B4}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:category_id:ok]</field>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6926F038-2373-4658-B6E1-3C3545520491}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:Calculation_982629167583096832:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</field>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:Calculation_982629167583096832:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{40E7937E-58E5-4853-AFE9-CB1A24D293E9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</field>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[yr:trending_date_x:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2C17C38A-E5D7-47E5-8931-4B3FC76121EA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[sum:views:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gyc9650y3gbcy1dai9ea1wse3xv].[none:region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A7BA78D7-BB85-4769-97D8-741214C681F0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
